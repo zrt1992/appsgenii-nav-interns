@@ -1,0 +1,193 @@
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1
+$ ^[[200~ssh-keygen -t ed25519 -C "your_email@example.com"~
+bash: $'\E[200~ssh-keygen': command not found
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/AG-M88/.ssh/id_ed25519):
+Created directory '/c/Users/AG-M88/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/AG-M88/.ssh/id_ed25519
+Your public key has been saved in /c/Users/AG-M88/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:rvU6b23Q1nwAob4TT23UqS0HAySloNzCqtA/Zdpecbo your_email@example.com
+The key's randomart image is:
++--[ED25519 256]--+
+|       . .o+..   |
+|    o o . o.o  ..|
+|     = . ..  +...|
+| .  . .  .   o*  |
+|. ..  o S +..=o+ |
+|. .. = . +.=o.= .|
+| .  + . = o+.  . |
+|     o +.o..o    |
+|      o E=o.     |
++----[SHA256]-----+
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1
+$ git@github.com:KamranArshad-code/Kami1.git
+bash: git@github.com:KamranArshad-code/Kami1.git: No such file or directory
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1
+$ git init
+Initialized empty Git repository in C:/Users/AG-M88/Desktop/Kami1/.git/
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git remote add origin git@github.com:KamranArshad-code/Kami1.git
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git remote -v
+origin  git@github.com:KamranArshad-code/Kami1.git (fetch)
+origin  git@github.com:KamranArshad-code/Kami1.git (push)
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        UI UX Project .pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git add .
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Black.webp
+        new file:   UI UX Project .pdf
+
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git commit -am "Hi Kamran Welcome HERE"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'AG-M88@AG-Training-5.(none)')
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$
+ git config --global user.email "you@example.com"
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$
+git config --global user.name "Your Name"
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ GIT STATUS
+git: 'STATUS' is not a git command. See 'git --help'.
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Black.webp
+        new file:   UI UX Project .pdf
+
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git commit -am "Hi Kami"
+[master (root-commit) 3cf1e1b] Hi Kami
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Black.webp
+ create mode 100644 UI UX Project .pdf
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:KamranArshad-code/Kami1.git'
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git push origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git push origin master
+
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+AG-M88@AG-Training-5 MINGW64 ~/Desktop/Kami1 (master)
+$ git push origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 437.79 KiB | 1.52 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:KamranArshad-code/Kami1.git
+ * [new branch]      master -> master
+
+-------------------------------------------------------------------------------------
+						To Push File
+-------------------------------------------------------------------------------------
+
+git status(For File Status)/Show Red Color File
+git add . (Used to add File) use only one Time
+git commit -am " any Text"(Add any commit)
+git push origin master(Push into git)
+
+--------------------------------------------------------------------------------------
+					To Share File /Pull File
+--------------------------------------------------------------------------------------
+
+git status
+git remote rm origin (Skip if not run)
+git init(click Run/Enter) use only one Time
+git remote add origin (Others Files Address Paste Here) and RUN/Enter
+git pull origin master/main
+
+--------------------------------------------------------------------------------------
+					Must Check This
+--------------------------------------------------------------------------------------
+
+git Status(For Any Errors)
+git remote -v (must have same address for push and pull)
+origin  git@github.com:KamranArshad-code/Kami1.git (fetch)
+origin  git@github.com:KamranArshad-code/Kami1.git (push)
+
+
